@@ -145,13 +145,13 @@ def main():
         calc.dividir(5, 0)
         
     except ValueError as e:
-        logger.error(f"Error de valor: {str(e)}")
+        logger.error("Error de valor: {str.e}")
         print(f"Error de valor: {e}")
     except TypeError as e:
-        logger.error(f"Error de tipo: {str(e)}")
+        logger.error("Error de tipo: {str.e}")
         print(f"Error de tipo: {e}")
-    except Exception as e:
-        logger.error(f"Error inesperado: {str(e)}")
+    except ImportError as e:
+        logger.error("Error inesperado: {str.e}")
         print(f"Error inesperado: {e}")
 
 if __name__ == "__main__":
