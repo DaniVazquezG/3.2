@@ -33,9 +33,7 @@ class CAlculadoraCientifica:
                 raise TypeError(f"Se esperaba un número, se recibió {type(num)}")
                 
     # Operaciones básicas
-    def sumar(self,
-              a, 
-              b):
+    def sumar(self, a, b):
         """Suma dos números"""
         self.validar_numeros(a, b)
         logger.info("Sumando {%d} + {%d}", a, b)
@@ -44,13 +42,13 @@ class CAlculadoraCientifica:
     def restar(self, a, b):
         """Resta dos números"""
         self.validar_numeros(a, b)
-        logger.info(f"Restando {a} - {b}")
+        logger.info("Restando {%d} - {%d}", a, b)
         return a - b
     
     def multiplicar(self, a, b):
         """Multiplica dos números"""
         self.validar_numeros(a, b)
-        logger.info(f"Multiplicando {a} * {b}")
+        logger.info("Multiplicando {%d} * {%d}", a, b)
         return a * b
     
     def dividir(self, a, b):
@@ -59,60 +57,60 @@ class CAlculadoraCientifica:
         if b == 0:
             logger.error("Intento de división por cero")
             raise ValueError("No se puede dividir por cero")
-        logger.info(f"Dividiendo {a} / {b}")
+        logger.info("Dividiendo {%d} / {%d}", a, b)
         return a / b
 
     # Operaciones avanzadas
     def potencia(self, base, exponente):
         """Calcula la potencia de un número"""
         self.validar_numeros(base, exponente)
-        logger.info(f"Calculando {base} ^ {exponente}")
+        logger.info("Calculando {%d} ^ {%d}", base, exponente)
         return math.pow(base, exponente)
     
     def raiz_cuadrada(self, numero):
         """Calcula la raíz cuadrada de un número"""
         self.validar_numeros(numero)
         if numero < 0:
-            logger.error(f"Intento de calcular raíz cuadrada de número negativo: {numero}")
+            logger.error("Intento de calcular raíz cuadrada de número negativo: {numero}")
             raise ValueError("No se puede calcular la raíz cuadrada de un número negativo")
-        logger.info(f"Calculando raíz cuadrada de {numero}")
+        logger.info("Calculando raíz cuadrada de {numero}")
         return math.sqrt(numero)
     
     def logaritmo_natural(self, numero):
         """Calcula el logaritmo natural de un número"""
         self.validar_numeros(numero)
         if numero <= 0:
-            logger.error(f"Intento de calcular logaritmo de número no positivo: {numero}")
+            logger.error("Intento de calcular logaritmo de número no positivo: {numero}")
             raise ValueError("No se puede calcular el logaritmo de un número menor o igual a cero")
-        logger.info(f"Calculando logaritmo natural de {numero}")
+        logger.info("Calculando logaritmo natural de {numero}")
         return math.log(numero)
     
     def logaritmo_base_10(self, numero):
         """Calcula el logaritmo en base 10 de un número"""
         self.validar_numeros(numero)
         if numero <= 0:
-            logger.error(f"Intento de calcular logaritmo base 10 de número no positivo: {numero}")
+            logger.error("Intento de calcular logaritmo base 10 de número no positivo: {numero}")
             raise ValueError("No se puede calcular el logaritmo de un número menor o igual a cero")
-        logger.info(f"Calculando logaritmo base 10 de {numero}")
+        logger.info("Calculando logaritmo base 10 de {numero}")
         return math.log10(numero)
     
     def seno(self, angulo):
         """Calcula el seno de un ángulo en radianes"""
         self.validar_numeros(angulo)
-        logger.info(f"Calculando seno de {angulo} radianes")
+        logger.info("Calculando seno de {angulo} radianes")
         return math.sin(angulo)
     
     
     def coseno(self, angulo):
         """Calcula el coseno de un ángulo en radianes"""
         self.validar_numeros(angulo)
-        logger.info(f"Calculando coseno de {angulo} radianes")
+        logger.info("Calculando coseno de {angulo} radianes")
         return math.cos(angulo)
     
     def tangente(self, angulo):
         """Calcula la tangente de un ángulo en radianes"""
         self.validar_numeros(angulo)
-        logger.info(f"Calculando tangente de {angulo} radianes")
+        logger.info("Calculando tangente de {angulo} radianes")
         return math.tan(angulo)
 
 def main():

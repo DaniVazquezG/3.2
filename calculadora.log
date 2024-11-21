@@ -1,0 +1,14 @@
+2024-11-21 18:51:07,799 - INFO - Iniciando calculadora científica
+2024-11-21 18:51:07,800 - INFO - Sumando {5} + {3}
+2024-11-21 18:51:07,800 - INFO - Restando 10 - 4
+2024-11-21 18:51:07,801 - INFO - Multiplicando 6 * 7
+2024-11-21 18:51:07,802 - INFO - Dividiendo 15 / 3
+2024-11-21 18:51:07,803 - INFO - Calculando 2 ^ 3
+2024-11-21 18:51:07,804 - INFO - Calculando raíz cuadrada de 16
+2024-11-21 18:51:07,804 - INFO - Calculando logaritmo natural de 2.718
+2024-11-21 18:51:07,805 - INFO - Calculando logaritmo base 10 de 100
+2024-11-21 18:51:07,805 - INFO - Calculando seno de 1.5707963267948966 radianes
+2024-11-21 18:51:07,806 - INFO - Calculando coseno de 1.5707963267948966 radianes
+2024-11-21 18:51:07,807 - INFO - Calculando tangente de 0.7853981633974483 radianes
+2024-11-21 18:51:07,808 - ERROR - Intento de división por cero
+2024-11-21 18:51:07,809 - ERROR - Error de valor: No se puede dividir por cero
